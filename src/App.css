@@ -1,0 +1,94 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #444;
+}
+
+#game-area {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#game-board {
+  background-color: #c77;
+  border-radius: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#move-control {
+}
+
+#messages {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #ddd;
+}
+
+#messages.gameover {
+  font-size: 26px;
+  font-weight: bold;
+  color: #c77;
+}
+
+.hole {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #666;
+  border-radius: 25px;
+  margin: 5px 5px 5px 5px;
+  background-color: #444;
+  outline: none;
+}
+
+.hole.null {
+  display: none;
+}
+
+.hole.ball {
+  background-color: #ddd;
+}
+
+.hole.selected {
+  background-color: #f22;
+}
+
+#move-control button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  margin: 3px 3px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  /*-webkit-transition: all 0.3s;*/
+  /*-moz-transition: all 0.3s;*/
+  /*transition: all 0.3s;*/
+  font-size: 18px;
+}
+
+#move-control button:hover,
+#move-control button:active{
+  border: 3px solid #ddd;
+  padding: 7px 13px;
+  color: #ddd;
+}
+
+.App {
+  text-align: center;
+  color: #ddd;
+}
